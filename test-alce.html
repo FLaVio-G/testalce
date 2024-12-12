@@ -1,72 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-    .logo-1 {
-      background-color: red;
-      width: 900px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      font-size: 25px;
-      gap: 2px;
-    }
-    .fake-image {
-      background-color: blue;
-      width: 450px;
-      height: 450px;
-    }
-    .card-1 {
-      width: 900px;
-      overflow: hidden;
-      background-color: cyan;
-      display: flex;
-    }
 
-    .card-2 {
-        width: 900px;
-      overflow: hidden;
-      background-color: cyan;
-      display: flex;
-      margin-top: 20px;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  .logo-1 {
+    background-color: gray;
+    width: 750px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 5px;
+    justify-content: start;
+  }
 
-    .text-1{
-        width: 300px;
-    }
+  .img-1 {
 
-    .card-content{
-        margin-left: 20px;
-    }
+    width: 350px;
+    height: 350px;
+  }
 
- 
-  </style>
-  <body>
-    <div">
-      <div class="logo-1">
-        Logo</div>
+  .card-1 {
+    width: 750px;
+    overflow: hidden;
+
+    display: flex;
+
+  }
+
+  .card-2 {
+    width: auto;
+    overflow: hidden;
+
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .text-1 {
+    width: 300px;
+  }
+
+  .card-content {}
+
+  .main-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 100px;
+  }
+
+  .div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+
+
+  }
+
+  .div-2 {
+    padding: 20px;
+  }
+
+  .button-1 {
+
+    width: 200px;
+    height: 50px;
+    border: none;
+  }
+
+  .title-1 {
+    margin-top: 40px;
+    font-size: 25px;
+  }
+</style>
+<script>
+
+  function openPop() {
+    document.getElementById("myForm").style.display = "block";
+  }
+
+  function closePop() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+
+<body>
+  <div class="main-1">
+    <div class="logo-1">
+      Logo</div>
+    <div class="div-1">
       <div class="card-1">
-        <div class="fake-image">teste</div>
-        <div class="card-content"">
-          <h1 >Titulo</h1>
-          <p class="text-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut
-            aperiam, quia, reiciendis, voluptatum libero voluptate iure eligendi
-            vitae dolore odio quos aut vero quo totam rerum eaque. Beatae,
-            neque.
-          </p>
+        <div class="div-2">
+          <img class="img-1" src="diferenca-entre-aves-e-passaros.jpg" alt="">
         </div>
-      </div>
-
-      <div class="card-2">
-        <div class="fake-image">teste</div>
-        <div class="card-content"">
+        <div class="card-content">
           <h1>Titulo</h1>
-          <p class="text-1">
+          <p class=" text-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut
             aperiam, quia, reiciendis, voluptatum libero voluptate iure eligendi
             vitae dolore odio quos aut vero quo totam rerum eaque. Beatae,
@@ -75,8 +113,32 @@
         </div>
       </div>
 
-      
-      <button>Botão que abre um popup</button>
+      <div class="card-1">
+        <div class="div-2">
+          <img class="img-1" src="diferenca-entre-aves-e-passaros.jpg" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="title-1">Titulo</h1>
+          <p class=" text-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut
+            aperiam, quia, reiciendis, voluptatum libero voluptate iure eligendi
+            vitae dolore odio quos aut vero quo totam rerum eaque. Beatae,
+            neque.
+          </p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup-1">
+        <div>teste</div>
+      </div>
+
+
+
+      <button class="button-1" onclick="openForm()">Botão que abre um popup</button>
     </div>
-  </body>
+
+
+  </div>
+</body>
+
 </html>
