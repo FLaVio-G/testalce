@@ -5,140 +5,216 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <style>
+    .logo-1 {
+      background-color: gray;
+      width: 750px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      padding: 5px;
+      justify-content: start;
+    }
+
+    .img-1 {
+      width: 350px;
+      height: 350px;
+    }
+
+    .card-1 {
+      width: 750px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .card-2 {
+      width: auto;
+      overflow: hidden;
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .text-1 {
+      width: 300px;
+    }
+
+    .main-1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      margin: 100px;
+    }
+
+    .div-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .div-2 {
+      padding: 20px;
+    }
+
+    .button-1 {
+      width: 200px;
+      height: 50px;
+      border: none;
+      background-color: gray;
+    }
+
+    .title-1 {
+      margin-top: 40px;
+      font-size: 25px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      width: 400px;
+      height: 430px;
+      background-color: darkgrey;
+      flex-direction: column;
+    }
+
+    .div-3 {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 16px;
+      background: #ff5c5c;
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-3 {
+      width: 200px;
+      height: 200px;
+    }
+
+    .modal-text {
+      font-size: 35px;
+    }
+
+    .div-4 {
+      margin-top: 30px;
+    }
+
+    .button-att {
+      width: 150px;
+      height: 50px;
+      background-color: greenyellow;
+      border: none;
+      font-size: 15px;
+    }
+
+    .img-3 {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
 </head>
-<style>
-  .logo-1 {
-    background-color: gray;
-    width: 750px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    padding: 5px;
-    justify-content: start;
-  }
-
-  .img-1 {
-
-    width: 350px;
-    height: 350px;
-  }
-
-  .card-1 {
-    width: 750px;
-    overflow: hidden;
-
-    display: flex;
-
-  }
-
-  .card-2 {
-    width: auto;
-    overflow: hidden;
-
-    display: flex;
-    margin-top: 20px;
-  }
-
-  .text-1 {
-    width: 300px;
-  }
-
-  .card-content {}
-
-  .main-1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin: 100px;
-  }
-
-  .div-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 25px;
-
-
-  }
-
-  .div-2 {
-    padding: 20px;
-  }
-
-  .button-1 {
-
-    width: 200px;
-    height: 50px;
-    border: none;
-  }
-
-  .title-1 {
-    margin-top: 40px;
-    font-size: 25px;
-  }
-</style>
-<script>
-
-  function openPop() {
-    document.getElementById("myForm").style.display = "block";
-  }
-
-  function closePop() {
-    document.getElementById("myForm").style.display = "none";
-  }
-</script>
 
 <body>
   <div class="main-1">
-    <div class="logo-1">
-      Logo</div>
+    <div class="logo-1">Logo</div>
     <div class="div-1">
       <div class="card-1">
         <div class="div-2">
-          <img class="img-1" src="diferenca-entre-aves-e-passaros.jpg" alt="">
+          <img class="img-1" src="diferenca-entre-aves-e-passaros.jpg" alt="" />
         </div>
         <div class="card-content">
           <h1>Titulo</h1>
-          <p class=" text-1">
+          <p class="text-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut
-            aperiam, quia, reiciendis, voluptatum libero voluptate iure eligendi
-            vitae dolore odio quos aut vero quo totam rerum eaque. Beatae,
-            neque.
+            aperiam, quia, reiciendis, voluptatum libero voluptate iure
+            eligendi vitae dolore odio quos aut vero quo totam rerum eaque.
+            Beatae, neque.
           </p>
         </div>
       </div>
 
       <div class="card-1">
         <div class="div-2">
-          <img class="img-1" src="diferenca-entre-aves-e-passaros.jpg" alt="">
+          <img class="img-1" src="diferenca-entre-aves-e-passaros.jpg" alt="" />
         </div>
         <div class="card-content">
           <h1 class="title-1">Titulo</h1>
-          <p class=" text-1">
+          <p class="text-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut
-            aperiam, quia, reiciendis, voluptatum libero voluptate iure eligendi
-            vitae dolore odio quos aut vero quo totam rerum eaque. Beatae,
-            neque.
+            aperiam, quia, reiciendis, voluptatum libero voluptate iure
+            eligendi vitae dolore odio quos aut vero quo totam rerum eaque.
+            Beatae, neque.
           </p>
         </div>
       </div>
 
-      <div class="popup" id="popup-1">
-        <div>teste</div>
+      <div id="modal" class="modal">
+        <button id="CloseModalBtn" class="button-close">X</button>
+        <div class="div-3">
+          <h2 class="modal-text">Imagens da API</h2>
+          <img id="photo" class="img-3" alt="Foto Aleatória" />
+          <div class="div-4">
+            <button id="updateImageBtn" class="button-att">Botão Atualizar</button>
+          </div>
+        </div>
       </div>
 
-
-
-      <button class="button-1" onclick="openForm()">Botão que abre um popup</button>
+      <button id="openModalBtn" class="button-1">Botão que abre popup</button>
     </div>
-
-
   </div>
+
+  <script>
+    const openModalBtn = document.getElementById("openModalBtn");
+    const modal = document.querySelector(".modal");
+    const closeModalBtn = document.getElementById("CloseModalBtn");
+    const updateImageBtn = document.getElementById("updateImageBtn");
+    const imgElement = document.getElementById("photo");
+
+    const THE_CAT_API_URL = "https://api.thecatapi.com/v1/images/search";
+
+    async function fetchRandomPhoto() {
+      try {
+        const response = await fetch(THE_CAT_API_URL);
+        const data = await response.json();
+        const imageUrl = data[0].url;
+        imgElement.src = imageUrl;
+      } catch (error) {
+        console.error("Erro ao obter foto aleatória:", error.message);
+      }
+    }
+
+    openModalBtn.addEventListener("click", () => {
+      modal.style.display = "flex";
+      fetchRandomPhoto();
+    });
+
+    closeModalBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    updateImageBtn.addEventListener("click", () => {
+      fetchRandomPhoto();
+    });
+  </script>
 </body>
 
 </html>
